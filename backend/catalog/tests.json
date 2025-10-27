@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Test get catalog items",
+      "method": "GET",
+      "path": "/?page=1&limit=12",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Test OPTIONS CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

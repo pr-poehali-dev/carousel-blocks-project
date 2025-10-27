@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "Test OPTIONS CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Test invalid action",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "invalid"
+      },
+      "expectedStatus": 400
+    },
+    {
+      "name": "Test missing user data",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "create_user"
+      },
+      "expectedStatus": 400
+    }
+  ]
+}
