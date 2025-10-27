@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import { useNavigate } from 'react-router-dom';
 
 export default function Subscription() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <Card className="max-w-2xl w-full p-8 md:p-12 animate-scale-in bg-gradient-to-br from-card via-card to-muted border-primary/20">
@@ -78,7 +80,7 @@ export default function Subscription() {
             size="lg"
             variant="outline"
             className="w-full"
-            onClick={() => window.close()}
+            onClick={() => navigate('/')}
           >
             Вернуться назад
           </Button>
