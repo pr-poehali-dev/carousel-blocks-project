@@ -194,11 +194,10 @@ export default function Catalog() {
             {catalogItems.map((item, index) => (
               <Card
                 key={item.id}
-                className="overflow-hidden hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 animate-scale-in cursor-pointer group"
+                className="overflow-hidden hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 animate-scale-in group"
                 style={{ animationDelay: `${index * 50}ms` }}
-                onClick={() => handleItemClick(item)}
               >
-                <div className="relative">
+                <div className="relative cursor-pointer" onClick={() => handleItemClick(item)}>
                   <Carousel className="w-full">
                     <CarouselContent>
                       {item.images.map((img, imgIndex) => (
@@ -214,7 +213,7 @@ export default function Catalog() {
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" onClick={(e) => e.stopPropagation()}>
                       <CarouselPrevious className="left-2" />
                       <CarouselNext className="right-2" />
                     </div>
