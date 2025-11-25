@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import Icon from '@/components/ui/icon';
-import { useNavigate } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Icon from "@/components/ui/icon";
+import { useNavigate } from "react-router-dom";
 
 export default function Subscription() {
   const navigate = useNavigate();
@@ -13,10 +13,10 @@ export default function Subscription() {
             <Icon name="Crown" size={48} className="text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Премиум подписка
+            3000+ Videos
           </h1>
           <p className="text-muted-foreground text-lg">
-            Получите полный доступ ко всему контенту
+            Large archive of private Chinese femdom
           </p>
         </div>
 
@@ -26,10 +26,8 @@ export default function Subscription() {
               <Icon name="Check" size={24} className="text-primary" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Безлимитный доступ</h3>
-              <p className="text-muted-foreground">
-                Просматривайте любой контент без ограничений
-              </p>
+              <h3 className="font-semibold text-lg mb-1">Regular Updates</h3>
+              <p className="text-muted-foreground">New videos every day</p>
             </div>
           </div>
 
@@ -38,7 +36,7 @@ export default function Subscription() {
               <Icon name="Zap" size={24} className="text-secondary" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Эксклюзивный контент</h3>
+              <h3 className="font-semibold text-lg mb-1">Complete anonymity</h3>
               <p className="text-muted-foreground">
                 Доступ к премиум материалам и новинкам
               </p>
@@ -50,9 +48,10 @@ export default function Subscription() {
               <Icon name="Shield" size={24} className="text-accent" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Приоритетная поддержка</h3>
+              <h3 className="font-semibold text-lg mb-1">Complete anonymity</h3>
               <p className="text-muted-foreground">
-                Быстрая помощь и персональный менеджер
+                You get an exclusive login and password to access the website.
+                Your data will not be disclosed anywhere
               </p>
             </div>
           </div>
@@ -80,7 +79,7 @@ export default function Subscription() {
             size="lg"
             variant="outline"
             className="w-full"
-            onClick={() => navigate('/')}
+            onClick={() => navigate("/")}
           >
             Вернуться назад
           </Button>
