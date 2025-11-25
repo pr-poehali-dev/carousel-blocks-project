@@ -132,7 +132,11 @@ export default function Catalog() {
                 </Button>
               </>
             )}
-            
+            <Button
+              variant="ghost"
+              onClick={() => navigate("/about")}
+              className="hover-scale"
+            >
               <Icon name="Info" size={18} />
             </Button>
           </div>
