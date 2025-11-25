@@ -36,9 +36,11 @@ export default function Subscription() {
               <Icon name="Zap" size={24} className="text-secondary" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Complete anonymity</h3>
+              <h3 className="font-semibold text-lg mb-1">
+                Only the best videos
+              </h3>
               <p className="text-muted-foreground">
-                Доступ к премиум материалам и новинкам
+                We only select the best content that you will definitely like
               </p>
             </div>
           </div>
@@ -59,12 +61,10 @@ export default function Subscription() {
 
         <div className="bg-muted/50 rounded-xl p-6 mb-8 border border-primary/10">
           <div className="flex items-baseline justify-center gap-2 mb-2">
-            <span className="text-5xl font-bold gradient-text">990₽</span>
-            <span className="text-muted-foreground">/месяц</span>
+            <span className="text-5xl font-bold gradient-text">11.99 USD</span>
+            <span className="text-muted-foreground">/month</span>
           </div>
-          <p className="text-center text-muted-foreground text-sm">
-            Отменить можно в любой момент
-          </p>
+          <p className="text-center text-muted-foreground text-sm"></p>
         </div>
 
         <div className="space-y-3">
@@ -73,7 +73,7 @@ export default function Subscription() {
             className="w-full bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 transition-opacity text-lg py-6"
           >
             <Icon name="Sparkles" size={20} className="mr-2" />
-            Оформить подписку
+            Subscribe
           </Button>
           <Button
             size="lg"
@@ -81,7 +81,7 @@ export default function Subscription() {
             className="w-full"
             onClick={() => navigate("/")}
           >
-            Вернуться назад
+            Go back
           </Button>
         </div>
       </Card>
