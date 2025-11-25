@@ -102,7 +102,7 @@ export default function Catalog() {
                   className="hover-scale"
                 >
                   <Icon name="Settings" size={18} className="mr-2" />
-                  Админ
+                  Admin
                 </Button>
                 <Button
                   variant="outline"
@@ -110,7 +110,7 @@ export default function Catalog() {
                   className="hover-scale"
                 >
                   <Icon name="LogOut" size={18} className="mr-2" />
-                  Выход
+                  Exit
                 </Button>
               </>
             ) : (
@@ -121,14 +121,14 @@ export default function Catalog() {
                   className="hover-scale"
                 >
                   <Icon name="LogIn" size={18} className="mr-2" />
-                  Вход
+                  Login
                 </Button>
                 <Button
                   className="bg-gradient-to-r from-primary via-secondary to-accent hover-scale"
                   onClick={() => navigate("/subscription")}
                 >
                   <Icon name="Crown" size={18} className="mr-2" />
-                  Подписка
+                  Subscribe
                 </Button>
               </>
             )}
@@ -153,7 +153,7 @@ export default function Catalog() {
             }}
             className="hover-scale"
           >
-            Все
+            All
           </Button>
           {allTags.map((tag) => (
             <Button
